@@ -1,0 +1,5 @@
+fct main (void)
+{
+    mod_result = 10 mod 2;
+    print mod_result;
+}

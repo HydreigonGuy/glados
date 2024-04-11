@@ -1,0 +1,15 @@
+#| 
+            ceci est une fonction d'addition
+    |#
+
+
+fct main (void) { 
+    #| ceci est une ligne d'addition
+    |# 
+    print 11 + 11;
+}
+
+
+#| 
+            ceci est la fin d'une fonction d'addition
+            |#

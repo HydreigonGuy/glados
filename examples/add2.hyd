@@ -1,0 +1,5 @@
+fct main (void)
+{
+    hello = 13 + 32;
+    print hello;
+}

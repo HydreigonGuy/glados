@@ -1,0 +1,4 @@
+fct main (void)
+{
+    print 8 * 2;
+}

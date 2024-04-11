@@ -1,0 +1,5 @@
+fct main (void)
+{
+    div_result = 25 / 5;
+    print div_result;
+}

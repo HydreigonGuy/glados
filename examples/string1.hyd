@@ -1,0 +1,4 @@
+fct main (void)
+{
+    print $Hello World !;
+}

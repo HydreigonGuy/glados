@@ -1,0 +1,73 @@
+
+---------------------------------------
+ THE SYNTAX OF HYD IN BACKUS-NAUR FORM
+---------------------------------------
+
+
+<program> ::= {<function-definition>}*
+
+<function-definition> ::= fct <name> ( <parameters> ) { <statements> }
+
+<statements> ::= <statement>
+               | <statement> <statements>
+
+<statement> ::= <assignment>
+              | <function-call>
+              | <if-statement>
+              | <return-statement>
+
+<parameters> ::= <name>
+               | <name> <parameters>
+
+<if-statement> ::= if ( <relational-expression> ) { <statements> }
+                 | if ( <relational-expression> ) { <statements> } else { <statements> }
+
+<relational-expression> ::= <expression> == <expression>
+                          | <expression> != <expression>
+                          | <expression> < <expression>
+                          | <expression> > <expression>
+
+<return-statement> ::= return ( <expression> ) ;
+
+<function-call> ::= <name> ( <arguments> ) ;
+
+<arguments> ::= <expression>
+              | <expression> <arguments>
+
+<assignment> ::= <name> = <expression> ;
+
+<expression> ::= <value>
+               | <name> 
+               | <function-call> 
+               | <expression> <operator> <expression>
+               | ( <expression> )
+
+<operator> ::= +
+             | -
+             | *
+             | /
+             | mod
+
+<value> ::= [ - ] <number>
+          | <number>
+
+<number> ::= <digit> | <digit> <number>
+
+<name> ::= <letter>
+         | <letter> <suffix>
+
+<suffix> ::= (<letter> | <digit> | '_') <suffix>
+
+<letter> ::= a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z
+           | A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z
+
+<digit> ::= 0
+          | 1
+          | 2
+          | 3
+          | 4
+          | 5
+          | 6
+          | 7
+          | 8
+          | 9
